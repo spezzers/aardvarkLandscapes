@@ -47,10 +47,11 @@ body.condense {
 
     #logo {
         #logoBack {
-            width: 20 * $logoHeight;
+            width: 2.3 * $logoHeight;
             height: 2 * $logoHeight;
-            transform: translate(-18.8*$logoHeight, -$logoHeight) skewX(-21.5deg);
+            transform: translate(-1*$logoHeight, -$logoHeight) skewX(-21.5deg);
             border-bottom-right-radius: 1rem;
+            border-bottom-left-radius: 1.5rem;
             transition: $condenseLogoBack;
             box-shadow: 2px 7px 6px rgba(black, 0.2);
         }

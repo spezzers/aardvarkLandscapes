@@ -214,11 +214,18 @@ html {
                                 viewbox: 0 0 $iconSize $iconSize;
                             }
                         }
+                        a:hover {
+                            svg {
+                                fill: $yellow;
+                            }
+                        }
                     }
 
                     #navLink:hover {
                         background: none !important;
                         background-color: $yellow !important;
+                        transition-delay: 0s;
+                        transition-duration: 0s;
 
                     }
 
