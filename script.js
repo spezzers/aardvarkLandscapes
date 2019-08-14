@@ -121,7 +121,7 @@ var parallaxHero = document.getElementById("hero");
 
 // ---------------------------- Call functions ------------
 addNavListener();
-curtainOpen();
+//curtainOpen();
 window.onscroll = function () {
     if (document.body.classList.contains("scrollRecall") == false) {
     scrollPozish()
