@@ -19,7 +19,7 @@ function curtainClose() {
 
 function addNavListener() {
     var
-        aNavs = document.querySelectorAll("nav #navLink");
+        aNavs = document.querySelectorAll("#navLink");
     //console.log(aNavs);
     var i;
     var len = aNavs.length;
