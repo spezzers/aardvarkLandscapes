@@ -152,7 +152,7 @@ html {
         padding: 0;
         overflow-x: hidden;
         #spinWrap {
-            display: none;
+            visibility: hidden;
             pointer-events: none;
         }
         .page,
