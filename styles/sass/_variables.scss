@@ -1,0 +1,39 @@
+//  ------------------------------------- colors 
+$orange: #DD7654;
+$yellow: #FFD45C;
+$green: #3E654F;
+$light-green: #D3E3D6;
+$brown: #4D2C2C;
+$medium-brown: #695348;
+$light-grey: #E4E3E8;
+$grey: #9EA8B0;
+
+// -------------------------------------  variables
+$fontSize: 1.05rem;
+$leading: 1.25 * $fontSize;
+
+$iconSize: 1.5*$leading;
+
+$logoHeight: 3 * $leading;
+//$topMargin: 4 * $leading;
+
+$footerHeight: 6 * $leading;
+$pageStart: 1.5 * $logoHeight;
+$maxPageWidth: 52 * $leading;
+
+$condenseMist: opacity 0.6s;
+//$condenseLogoBack: width 0.25s,height 0.25s,border-radius 0.5s,transform 0.25s;
+//$condenseMist: opacity 0.6s;
+
+
+
+// ------------------------     page divisions in Percentage
+$totalWidth: 100.00;
+$oneSpace: 8;
+$oneWidth: (($totalWidth - ((1 + 1) * $oneSpace)) / 1) * 1%;
+
+$twoSpace: 5;
+$twoWidth: (($totalWidth - ((2 + 1) * $twoSpace)) / 2) * 1%;
+
+$threeSpace: 5;
+$threeWidth: (($totalWidth - ((3 + 1) * $threeSpace)) / 3) * 1%;

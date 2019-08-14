@@ -1,0 +1,48 @@
+<html>
+
+<head>
+    <style>
+        body {
+            background-color: darkblue;
+        }
+
+        #sprite {
+            width: 200px;
+            height: 200px;
+            background-image: url(images/logo/LogoSpriteC50L36R23.gif);
+
+        }
+    </style>
+</head>
+
+<body>
+    <div id="sprite"></div>
+    <script>
+        // Global variables -------------------------------------------------
+
+        // Sprite Animation function ------------------------------------------------
+
+        function animateSprite(id, units, startPos, frameQty, frameW, fps) {
+            var interval = 1000 / fps, sprite = document.getElementById(id);
+            for (let i = 0; i <= frameQty; i++) {
+                setTimeout(function() {
+                    if (i == frameQty) {
+                        console.log("GO TO NEXT PAGE!");
+                    } else {
+                        var position = (i * frameW) + startPos + units;
+                        sprite.style.backgroundPositionX = position;
+                        console.log(position);
+                    }
+
+                }, i * interval)
+            }
+        }
+
+
+        // Calls ----------------------------------------------------------------
+
+        animateSprite("sprite", "%", 49.375, 22, 2.53, 12);
+        console.log(sprite);
+        sprite.style.backgroundPosition = "49.375% 0";
+    </script>
+</body></html>

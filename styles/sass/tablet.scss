@@ -1,0 +1,36 @@
+@import 'variables';
+
+
+
+body {
+    header {}
+
+    #hero {
+        min-height: 15*$leading;
+    }
+
+    nav {}
+
+    main {
+        padding: 0;
+
+        .page {
+            padding-left: $twoSpace;
+            padding-right: $twoSpace;
+        }
+
+        ul.items {
+            li {
+                width: $twoWidth !important;
+                margin: 0 $twoSpace !important;
+
+            }
+
+            img.illustration {
+                width: 90%;
+            }
+        }
+
+
+    }
+}

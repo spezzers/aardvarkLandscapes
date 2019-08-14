@@ -1,0 +1,86 @@
+/* ------ Animated Logo ------------------------------------------ */
+
+@-webkit-keyframes aardvarkOut {
+    0% {
+        background-position: 49.375% 0;
+        visibility: visible;
+    }
+
+    100% {
+        background-position: 78.75% 0;
+        visibility: hidden;
+    }
+}
+
+
+@keyframes aardvarkOut {
+    0% {
+        background-position: 49.375% 0;
+        visibility: visible;
+    }
+
+    100% {
+        background-position: 78.75% 0;
+        visibility: hidden;
+    }
+}
+
+
+@-webkit-keyframes aardvarkIn {
+    0% {
+        background-position: 0 0;
+    }
+
+    100% {
+        background-position: 49.375% 0;
+    }
+}
+
+
+@keyframes aardvarkIn {
+    0% {
+        background-position: 0 0;
+    }
+
+    100% {
+        background-position: 49.375% 0;
+    }
+}
+
+
+@-webkit-keyframes hideKeyFrame {
+    0% {
+        opacity: 0;
+    }
+
+    4% {
+        opacity: 0;
+    }
+
+    5% {
+        opacity: 1;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+
+@keyframes hideKeyFrame {
+    0% {
+        opacity: 0;
+    }
+
+    3% {
+        opacity: 0;
+    }
+
+    6% {
+        opacity: 1;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}

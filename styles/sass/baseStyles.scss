@@ -1,0 +1,376 @@
+@import 'variables', 'fadeTransitions', 'logoAnimation', 'logo', 'pageCurtain', 'bodyCondense', 'sectionThemes';
+
+/* --- BODY ------------------------------------------------ */
+html {
+    font-family: Arial, sans-serif;
+    font-size: $fontSize;
+    line-height: $leading;
+    margin: 0;
+    padding: 0;
+    letter-spacing: 0.02;
+    word-spacing: 1.1;
+
+
+    a {
+        color: inherit;
+        text-decoration-line: none;
+    }
+
+    body.preload {
+        background-color: $orange;
+
+        * {
+            -webkit-transition: none !important;
+            -moz-transition: none !important;
+            -ms-transition: none !important;
+            -o-transition: none !important;
+            transition: none !important;
+            animation: none !important;
+            -webkit-animation: none !important;
+            -moz-animation: none !important;
+            -ms-animation: none !important;
+            -o-animation: none !important;
+            visibility: hidden !important;
+        }
+    }
+
+    body {
+        z-index: 0;
+        background-color: white;
+        margin: $pageStart 0 0;
+        padding: 0;
+        overflow-x: hidden;
+
+        .page,
+        .paddedWrap {
+            max-width: $maxPageWidth;
+            margin: 0;
+        }
+
+        .page {
+            margin: 0 auto;
+            padding-bottom: $leading;
+            left: 0;
+            text-align: center;
+
+        }
+
+        .paddedWrap {
+            margin-left: auto;
+            margin-right: auto;
+            padding-left: 1*$leading;
+            padding-right: 2*$leading;
+            padding-bottom: 1*$leading;
+
+        }
+
+        .distribute {
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+            justify-content: space-between;
+
+        }
+
+        footer {
+            position: relative;
+            bottom: 0;
+            padding: $leading 0;
+            font-size: 0.9*$fontSize;
+            color: $grey;
+
+
+            address {
+                font-style: normal;
+                display: inline-block;
+                text-align: right;
+                margin-left: auto;
+                margin-left: auto;
+            }
+        }
+
+        #mist {
+            width: 100vw;
+            margin: 0;
+            left: 0;
+            height: $pageStart;
+            position: fixed;
+            opacity: 1;
+            background-image: linear-gradient(white 80%, rgba(255, 255, 255, 0) 100%);
+            top: 0;
+            z-index: 1;
+            transition: $condenseMist;
+        }
+
+        header {
+            padding: 0 1rem;
+            z-index: 1;
+
+            #tagline {
+                font-size: 1.05rem;
+                font-weight: 100;
+                text-align: center;
+                letter-spacing: 1.1;
+                color: black;
+                max-width: 15rem;
+                opacity: 1;
+                transition: opacity 0.8s 0.5s;
+                z-index: -1;
+                margin: 0;
+            }
+
+
+        }
+
+        #hero {
+            background-size: cover;
+            background-attachment: scroll;
+            background-position: center;
+
+            ul {
+                max-width: $maxPageWidth;
+                margin: 0 auto;
+                background-color: rgba(white, 0.75);
+                background-image: linear-gradient(white, rgba(white, 0));
+                border-radius: 0 0 $leading $leading;
+                transition: all 0.6s;
+            }
+        }
+
+        //---------------------------------------------- Navigation Bar ----------
+        nav {
+            display: block;
+            width: 100%;
+            font-size: 0.8rem;
+            margin: 0;
+            background-color: $light-grey;
+            transition: margin 0.5s, padding 0.5s;
+
+            ul,
+            ul #navLink {
+                //transition: transform 0.6s 0.2s, opacity 0.8s 0.25s;
+            }
+
+            ul {
+                list-style: none;
+                padding: 0.5*$leading $leading;
+                text-align: center;
+                margin: 0;
+                z-index: -5;
+
+                a:hover,
+                .contact:hover {
+                    background-color: $yellow;
+                    background-image: linear-gradient(21.5deg, $yellow -80%, $light-green 300%);
+
+                    li {
+                        text-shadow: 1px 2px 6px rgba(black, 0.5);
+                    }
+                }
+
+                a:not(#contactGroup #icons a) {
+                    display: inline-block;
+                    min-width: 8.5em;
+                    max-width: 20em;
+                    margin: 0.25*$leading 0.2em;
+                    padding: 0.25*$leading;
+                    text-align: center;
+                    transform: skewX(-21.5deg);
+                    background-color: $green;
+                    background-image: linear-gradient(21.5deg, $green -40%, $light-green 300%);
+                    text-decoration: none;
+                    color: white;
+                    transition: background-image 0.5s;
+                    border-radius: 0.3rem;
+
+                    li {
+                        display: block;
+                        padding: 0 0.25rem;
+                        transform: skewX(21.5deg);
+                    }
+                }
+
+                #contactGroup {
+
+                    #navLink,
+                    #icons {
+                        transition: 0.4s;
+                        transition-delay: 0.3s;
+                    }
+
+                    #icons {
+                        //display: none;
+
+                        a {
+                            transform: skewX(0);
+                            background: none;
+                            min-width: 0;
+
+                            svg {
+
+                                fill: $orange;
+                                width: $iconSize;
+                                height: $iconSize;
+                                viewbox: 0 0 $iconSize $iconSize;
+                            }
+                        }
+                    }
+
+                    #navLink:hover {
+                        background: none !important;
+                        background-color: $yellow !important;
+
+                    }
+
+                    .contact {
+                        background-image: linear-gradient(21.5deg, $orange -40%, $light-green 300%);
+
+                        li {
+                            font-weight: bold;
+                        }
+                    }
+                }
+
+
+
+                a.currentPage {
+                    background-color: rgba($green, 0.1);
+                    background-image: linear-gradient(21.5deg, rgba($green, 0.2) 0%, rgba($light-green, 0.2) 100%);
+                    margin-bottom: 0;
+
+                    li,
+                    li:hover {
+                        color: white;
+                        font-weight: bold;
+                        opacity: 1;
+                        text-shadow: none;
+                    }
+
+                }
+            }
+        }
+
+        //-------------------------------------------- Main Content --------------
+        main {
+            margin: 0 auto;
+            text-align: center;
+            overflow-x: hidden;
+
+
+
+            section {
+                padding: 0;
+
+
+
+
+                p,
+                .note {
+                    max-width: $maxPageWidth;
+                    margin-bottom: $leading;
+                    max-width: 24*$leading;
+                    width: auto;
+                }
+
+
+
+                a {
+                    color: $green;
+                    text-decoration-line: none;
+                    text-align: left;
+                }
+
+                a:hover {
+                    color: $orange;
+                }
+
+                h1 {
+                    font-size: 2.15rem;
+                    line-height: 2 * $leading;
+                    margin: 2*$leading 0;
+
+                }
+
+                h2 {
+                    font-size: 1.8rem;
+                    line-height: 2 * $leading;
+                    padding-left: $fontSize/2;
+                }
+
+                h3 {
+                    font-size: $leading;
+                    line-height: $leading;
+                    padding-left: $fontSize;
+                }
+
+                p {
+                    padding-left: $fontSize*1.5;
+                    text-align: left;
+
+
+                }
+
+                .note {
+                    font-style: italic;
+                    text-align: right;
+                    font-size: 0.9*$fontSize;
+                    letter-spacing: 1.05;
+                    word-spacing: 1.25;
+                    padding: 0.75*$leading 0 0.25*$leading 1*$leading;
+                    margin-left: 2.25*$leading;
+                    margin-top: -0.5*$leading;
+                    font-weight: 100;
+                    display: block;
+                    border-radius: 0 0 0 1*$leading;
+
+                    a {
+                        display: inline-block;
+                    }
+                }
+
+                ul.items {
+                    list-style: none;
+                    margin: 0 auto;
+                    padding: 0;
+                    text-align: center;
+
+                    li {
+                        display: inline-block;
+                        filter: drop-shadow(-9px 8px 2px rgba(black, 0.05));
+
+                        img {
+                            filter: drop-shadow(-4px 2px 1px rgba(black, 0.1));
+                        }
+
+                    }
+
+                    h1,
+                    h2,
+                    h3 {
+                        padding-left: 0 $leading;
+
+                    }
+
+                    p {
+                        background: $light-green;
+                        border-radius: $leading;
+                        padding-bottom: 1*$leading;
+                        padding-right: 5%;
+                        padding-top: 8*$leading;
+                        margin-top: -8*$leading;
+
+                    }
+
+
+
+                }
+            }
+
+        }
+    }
+
+    //----------------------------------------------- Menu Button Styling ---------------
+    @import 'menu';
+    
+
+}

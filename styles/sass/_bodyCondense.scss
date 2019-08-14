@@ -1,0 +1,65 @@
+@import 'variables';
+
+body.condense {
+
+    #mist {
+        opacity: 0.05;
+        transition: $condenseMist;
+    }
+
+    nav {
+        margin-top: -$pageStart;
+        padding-top: $pageStart;
+        transition: margin 0.5s 0.05s, padding 0.5s 0.05s;
+        ul {
+            background: none !important;
+            //background-color: rgba(white, 0);
+            transition: background 0.2s;
+        }
+        #navLink {
+            opacity: 0;
+            transition: transform 0.1s 0.25s, opacity 0.9s 0.1s;
+        }
+
+        ul,
+        #icons {
+            //border-radius: 1.5em;
+            opacity: 0;
+            //transition: transform 0.1s 0.25s, opacity 0.9s 0.1s;
+        }
+
+        #contactGroup {
+            #navLink,
+            #icons {
+                transform: translateX(100vw);
+                transition: all 0.2s !important;
+                transition-delay: 0.2s !important;
+
+            }
+        }
+    }
+
+    #tagline {
+        opacity: 0;
+        transition: opacity 0s;
+
+    }
+
+    #logo {
+        #logoBack {
+            width: 20 * $logoHeight;
+            height: 2 * $logoHeight;
+            transform: translate(-18.8*$logoHeight, -$logoHeight) skewX(-21.5deg);
+            border-bottom-right-radius: 1rem;
+            transition: $condenseLogoBack;
+            box-shadow: 2px 7px 6px rgba(black, 0.2);
+        }
+
+        #bizName {
+            transform: translateX(-4em);
+            opacity: 0;
+            transition: transform 0.6s 0.15s, opacity 0.75s;
+            color: black;
+        }
+    }
+}

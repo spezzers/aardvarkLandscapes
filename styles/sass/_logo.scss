@@ -1,0 +1,97 @@
+$logoHeight: 4rem;
+$topMargin: 5rem;
+$condenseLogoBack: width 0.25s,
+height 0.25s,
+border-radius 0.5s,
+transform 0.25s;
+
+#logo {
+    display: table-row;
+    position: fixed;
+    font-family: Arial, sans-serif;
+    margin-left: 0.6rem;
+    margin-top: -$topMargin;
+    -webkit-animation: hideKeyFrame 1.5s;
+    animation: hideKeyFrame 1.5s;
+    z-index: 3;
+
+    #logoback {
+        transition: $condenseLogoBack;
+    }
+
+    #bizName {
+        display: table-cell;
+        vertical-align: middle;
+        margin: 0;
+        font-weight: bold;
+        padding-left: 1.12*$logoHeight;
+        font-size: 0.62*$logoHeight;
+        z-index: -250;
+        transition: transform 0.3s, opacity 0.6s;
+    }
+}
+
+#logoBack {
+    display: table-cell;
+    background-color: $orange;
+    transform: skewX(-21.5deg);
+    -webkit-filter: blur(0);
+    filter: blur(0);
+    border-radius: 0;
+    z-index: 249;
+    width: $logoHeight;
+    height: $logoHeight;
+    position: absolute;
+    transition: condenseLogoBack;
+
+}
+
+#logoBack:hover {
+    cursor: pointer;
+}
+
+
+#logoBack,
+#sprite,
+#logo #bizName {
+    height: $logoHeight;
+}
+
+
+#sprite {
+    width: $logoHeight;
+    position: absolute;
+    background: url(/images/logo/LogoSpriteC50L36R23.gif);
+    -webkit-animation: aardvarkIn 1.5s steps(36);
+    animation: aardvarkIn 1.5s steps(39);
+    background-size: cover;
+    z-index: 250;
+    pointer-events: none;
+}
+
+.preload {
+    sprite {
+        visibility: hidden !important;
+    }
+}
+
+#logo.out {
+
+    #bizName {
+        visibility: hidden;
+        //-webkit-animation: fullFadeOut 0.8s linear;
+        //animation: fullFadeOut 0.8s linear;
+    }
+
+    #logoBack {
+        width: 200vw;
+        height: 200vh;
+        margin-top: -50vh;
+        margin-left: -75vw;
+        transform: skewX(0);
+        //border-radius: 0 0 50% 0;
+        //opacity: 0.8;
+        -webkit-transition: all 0.8s;
+        transition: all 0.8s;
+    }
+}

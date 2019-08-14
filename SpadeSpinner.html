@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html>
+
+<body>
+
+    <head>
+    </head>
+    <div id="spinner">
+        <style>
+            @keyframes spinHead {
+                0% {
+                    width: 30px;
+                    border-left: 2px solid transparent;
+                    border-right: 2px solid transparent;
+                    border-top: 40px solid white;
+                    left: 9px;
+                    transform: skewX(0deg);
+                }
+
+                25% {
+                    width: 6px;
+                    border-left: 0 solid transparent;
+                    border-right: 0 solid transparent;
+                    transform: skewX(15deg);
+                    left: 27px;
+                }
+
+                50% {
+                    width: 30px;
+                    border-left: 2px solid transparent;
+                    border-right: 2px solid transparent;
+                    border-top: 37px solid white;
+                    left: 9px;
+                    transform: skewX(0deg);
+                }
+
+                75% {
+                    width: 6px;
+                    border-left: 0 solid transparent;
+                    border-right: 0 solid transparent;
+                    transform: skewX(-15deg);
+                    left: 16px;
+                }
+
+                100% {
+                    width: 30px;
+                    border-left: 2px solid transparent;
+                    border-right: 2px solid transparent;
+                    border-top: 40px solid white;
+                    left: 9px;
+                    transform: skewX(0deg);
+                }
+            }
+
+            @keyframes spinHandle {
+                0% {
+                    width: 12px;
+                    left: 14px;
+                }
+
+                50% {
+                    width: 0;
+                    left: 21px;
+                    border-width: 5px 4px;
+                }
+
+                100% {
+                    width: 12px;
+                    left: 14px;
+                }
+            }
+
+            #spinner {
+                margin: 0 auto;
+                vertical-align: middle;
+                width: 50px;
+                height: 150px;
+                background-color: darkblue;
+                border: none;
+                border-radius: 10px;
+            }
+
+            #shovelHead {
+                width: 30px;
+                height: 0;
+                border-left: 2px solid transparent;
+                border-right: 2px solid transparent;
+                border-top: 40px solid white;
+                left: 9px;
+                position: relative;
+                animation: spinHead 1.2s linear infinite;
+            }
+
+            #shovelNeck {
+                height: 70px;
+                width: 6px;
+                left: 22px;
+                top: 8px;
+                background-color: white;
+                position: relative;
+                margin-bottom: 8px
+            }
+
+            #shovelHandle {
+                height: 11px;
+                width: 12px;
+                border: 5px solid white;
+                border-radius: 0 0 10px 10px;
+                left: 14px;
+                top: 10px;
+
+                position: relative;
+                animation: spinHandle 0.6s linear infinite;
+            }
+        </style>
+        <div id="shovelHandle"></div>
+        <div id="shovelNeck"></div>
+        <div id="shovelHead"></div>
+    </div>
+    <script>
+        console.log("hello world");
+        var spinner = document.getElementById("spinner");
+
+        spinner.addEventListener('animationiteration', )
+    </script>
+
+</body></html>

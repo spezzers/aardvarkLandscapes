@@ -1,0 +1,106 @@
+@import 'variables';
+
+
+.theme1 {
+    background-color: white; //Fallback option
+    background-image: url(/images/textures/img-noise-150x150.png), linear-gradient(21.5deg, $light-grey -100%, white 140%);
+    background-size: 100px 100px, cover;
+    position: static;
+    width: 100%;
+    left: 0;
+    color: black;
+    //box-shadow: 0 -1rem 3rem rgba(black, 0.2);
+    z-index: -20;
+    //text-shadow: 1px 3px 0.8em rgba(black, 0.2);
+
+    a {
+        color: $green;
+    }
+
+    .note {
+        border-left: 1px dashed $grey;
+        border-bottom: 1px dashed $grey;
+        color: $grey;
+
+        a {
+            opacity: 0.9;
+        }
+    }
+    h1, h2, h3 {
+        color: $grey;
+    }
+
+    ul.items {
+        li {
+            color: black;
+            text-shadow: none;
+            border-bottom: 2px solid white;
+
+            a {
+                color: $green;
+            }
+
+            p {
+                background-color: white; //Fallback option
+                //background-image: linear-gradient(21.5deg, rgba($brown, 0.1) -0%, $light-green 80%);
+                
+                //background-color: $light-grey;
+            }
+        }
+    }
+
+    .paddedWrap,
+    .page {
+        border-bottom: $leading groove rgba($grey, 0.06);
+    }
+}
+
+
+.theme2 {
+    background-color: $brown; //Fallback option
+    background-image: url(/images/textures/img-noise-150x150.png), linear-gradient(21.5deg, $brown -50%, $light-green 600%);
+    background-size: 200px 200px, cover;
+    position: static;
+    width: 100%;
+    left: 0;
+    color: white;
+    //box-shadow: 0 -1rem 3rem rgba(black, 0.2);
+    z-index: -20;
+    text-shadow: 1px 3px 0.8em rgba(black, 0.1);
+
+    a {
+        color: $light-green;
+    }
+
+    .note {
+        border-left: 1px dashed rgba(white, 0.5);
+        border-bottom: 1px dashed rgba(white, 0.5);
+        color: rgba(white, 0.5);
+
+        a {
+            opacity: 0.9;
+        }
+    }
+
+    ul.items {
+        li {
+            color: black;
+            text-shadow: none;
+
+            a {
+                color: $green;
+            }
+
+            p {
+                background-color: $light-green; //Fallback option
+                background-image: linear-gradient(21.5deg, $brown -130%, $light-green 70%, white 200%);
+                //background-color: $light-grey;
+            }
+        }
+    }
+
+    .paddedWrap,
+    .page {
+        border-bottom: $leading groove rgba($brown, 0.1);
+    }
+}

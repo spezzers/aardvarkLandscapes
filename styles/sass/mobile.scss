@@ -1,0 +1,50 @@
+@import 'variables';
+
+
+body {
+    header {}
+    nav {
+       // margin-bottom: $leading;
+        #contactGroup {
+            position: static;
+            display: block;
+            top: inherit;
+            left: inherit;
+            #icons {
+                display: none;
+            }
+            #navLink {
+            }
+        }
+    }
+    #hero {
+        min-height: 10*$leading;
+        //padding-bottom: 2*$leading;
+    }
+
+    main {
+        padding: $leading 0 0 0;
+
+        .page {
+            padding: 0 $oneSpace !important;
+
+        }
+
+        section {}
+
+        ul.items {
+            li {
+                width: $oneWidth !important;
+                margin: 0 $oneSpace !important;
+
+            }
+
+            img.illustration {
+                width: 80%;
+            }
+
+        }
+
+
+    }
+}
