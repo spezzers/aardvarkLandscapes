@@ -97,4 +97,7 @@ transform 0.25s;
         -webkit-transition: all 0.8s;
         transition: all 0.8s;
     }
+    #logoback:hover {
+        background-color: $orange;
+    }
 }
