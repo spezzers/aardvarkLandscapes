@@ -6,83 +6,84 @@ body.menu.willCondense {
     transition: all 0s;
     height: 100vh !important;
     position: relative !important;
-    overflow: hidden;
+    overflow: hidden !important;
+    margin: 0 !important;
+
+    #noise {
+        position: fixed;
+        top: 0;
+        left: 0;
+        margin: 0;
+        height: 100vh;
+        width: 100vw;
+        overflow: hidden;
+        display: none !important;
+    }
 
     #mist,
-    footer *,
-    main *,
-        {
-        opacity: 0 !important;
-        pointer-events: none !important;
-        background-color: $orange !important;
-        background-image: none !important;
-        transition: opacity 0s;
-        overflow: hidden !important;
-        touch-action: none;
-
-    }
-
+    footer,
     main {
-        height: 100vh;
-        top: 0;
-        overflow-y: hidden;
-        background-color: $orange !important;
-        background-image: none !important;
+        display: none !important;
     }
 
-    footer {
-        height: 0 !important;
-        margin: 0;
-    }
 
-    #logo {
-        position: fixed;
 
-        #logoBack {
-            opacity: 0;
-        }
+    .page {
+        top: $pageStart;
+        position: relative;
+        width: 100%;
+        margin: 0 auto;
 
-        #bizName {
-            color: white;
-            z-index: 2;
+
+        #logo {
+            margin-left: 0.6rem;
+            #logoBack {
+                opacity: 0;
+            }
+    
+            #bizName {
+                color: white;
+                z-index: 2;
+            }
         }
     }
 
     header #tagline {
-        color: white !important;
-        visibility: hidden;
-        position: fixed;
-        z-index: 0;
+        display: none !important;
     }
 
     nav#hero,
     nav {
-        background-image: url(/images/textures/img-noise-150x150.png) !important;
+        background-image: none !important;
         background-size: 90px;
         background-color: transparent !important;
         border: none;
-        width: 100%;
-        height: 100vh;
+        width: 100vw;
+        height: auto;
         position: fixed;
         left: 0;
         top: 0;
         overflow: hidden;
         text-align: center;
         z-index: 0;
-        padding: $pageStart+(3*$leading) 0;
+        padding: $pageStart+(3*$leading) 0 0 0;
+        margin: 0 auto;
 
 
         ul {
             display: block;
+            margin: 0 auto;
             width: 100%;
-            height: 100vh;
+            height: inherit;
             top: 0;
+            margin: 0 auto;
             padding: $leading;
             background-color: transparent !important;
             background-image: none !important;
             //position: relative;
             border-top: 1px solid white;
             overflow-y: auto;
+            overflow-x: hidden;
 
             a:active {
                 background-color: $yellow !important;
@@ -103,7 +104,7 @@ body.menu.willCondense {
                 position: inherit !important;
 
                 #icons {
-                    position: fixed;
+                    position: absolute !important;
                     top: 1.05*$pageStart;
                     left: 0;
                     width: 98vw;

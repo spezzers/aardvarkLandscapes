@@ -2,19 +2,17 @@
 
 
 body {
-    header {}
+    
     nav {
+        padding-bottom: 2*$leading;
        // margin-bottom: $leading;
         #contactGroup {
             position: static;
             display: block;
             top: inherit;
             left: inherit;
-            #icons {
-                display: none;
-            }
-            #navLink {
-            }
+            
+            
         }
     }
     #hero {
@@ -30,7 +28,7 @@ body {
 
         }
 
-        section {}
+        
 
         ul.items {
             li {

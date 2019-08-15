@@ -3,13 +3,57 @@
 
 
 body {
-    header {}
 
     #hero {
         min-height: 15*$leading;
     }
+    nav {
+        margin: 2*$leading 0;
 
-    nav {}
+        #contactGroup {
+            position: absolute;
+            right: $leading;
+            top: $pageStart;
+            z-index: 1;
+            display: inline;
+
+            * {
+                display: inline-block;
+                vertical-align: middle;
+            }
+
+            #navLink,
+            #icons {
+                transition: 0.6s;
+                transition-delay: 0.1s;
+            }
+
+            #icons {
+                display: inline-block !important;
+
+                a {
+                    transform: skewX(0);
+                    background: none;
+                    min-width: 0;
+
+                    svg {
+
+                        fill: $orange;
+                        width: $iconSize;
+                        height: $iconSize;
+                        viewbox: 0 0 $iconSize $iconSize;
+                    }
+                }
+            }
+
+
+
+            li {
+                font-weight: bold;
+            }
+        }
+    }
+
 
     main {
         padding: 0;

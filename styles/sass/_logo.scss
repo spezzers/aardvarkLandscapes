@@ -18,10 +18,8 @@ transform 0.25s;
     #logoback {
         transition: $condenseLogoBack;
     }
-    #logoback:hover {
-        background-color: $yellow;
-    }
 
+    
     #bizName {
         display: table-cell;
         vertical-align: middle;
