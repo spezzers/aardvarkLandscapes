@@ -97,8 +97,12 @@ html {
             position: relative;
             bottom: 0;
             padding: $leading 0;
-            font-size: 0.9*$fontSize;
+            font-size: 0.76*$fontSize;
+            letter-spacing: 0.05ch;
             color: $grey;
+            p {
+                margin: 0.3*$leading;
+            }
 
 
             address {
