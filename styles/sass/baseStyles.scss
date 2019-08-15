@@ -42,9 +42,9 @@ html {
 
         #noise {
             background-image: url(/images/textures/img-noise-150x150.png);
-            background-size: 100px;
-            opacity: 0.5;
-            mix-blend-mode: multiply;
+            background-size: 80px;
+            opacity: 0.4;
+            //mix-blend-mode: multiply;
             pointer-events: none;
             z-index: 250;
             height: 100vh;
