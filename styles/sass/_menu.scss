@@ -1,3 +1,4 @@
+
 body.menu,
 body.willCondense.menu,
 body.menu.willCondense {
@@ -8,7 +9,7 @@ body.menu.willCondense {
     position: relative !important;
     overflow: hidden !important;
     margin: 0 !important;
-
+    
     #noise {
         position: fixed;
         top: 0;
@@ -85,7 +86,7 @@ body.menu.willCondense {
             overflow-y: auto;
             overflow-x: hidden;
 
-            a:active {
+            a:hover {
                 background-color: $yellow !important;
             }
 
@@ -98,6 +99,9 @@ body.menu.willCondense {
                     opacity: 0.2;
 
                 }
+            }
+            a.currentPage:hover {
+                background-color: transparent !important;
             }
 
             #contactGroup {
@@ -115,6 +119,12 @@ body.menu.willCondense {
 
                         svg {
                             fill: white;
+                        }
+                    }
+                    a:hover {
+                        background-color: $yellow !important;
+                        svg {
+                            fill: white !important;
                         }
                     }
 
