@@ -6,7 +6,7 @@ body.menu.willCondense {
     transition: all 0s;
     height: 100vh !important;
     position: relative !important;
-    overflow: hidden !important;
+    
     margin: 0 !important;
     
     #noise {
@@ -63,27 +63,24 @@ body.menu.willCondense {
         position: fixed;
         left: 0;
         top: 0;
-        overflow: hidden;
+        overflow-x: hidden;
+        overflow-y: auto;
         text-align: center;
-        z-index: 0;
         padding: 0;
+        
         ul {
             display: block;
             margin: 0 auto;
             width: 100vw;
             max-width: 100vw;
             top: 0;
-            height: 100vh;
+            height: auto;
             left: 0;
-            margin: (3*$leading)+$pageStart auto;
+            margin: 0 auto;
             background-color: transparent !important;
             background-image: none !important;
             position: absolute;
-            border-top: 1px solid white;
-            overflow-y: scroll !important;
-            overflow-x: hidden;
-            
-
+            padding-top: (4*$leading)+$pageStart;
             a:hover {
                 background-color: $yellow !important;
             }
@@ -104,20 +101,23 @@ body.menu.willCondense {
 
             #contactGroup {
                 position: static !important;
-                .contact {
-                    margin-bottom: (5*$leading)+$pageStart;
-                }
+                overflow: visible;
                 #icons {
                     position: fixed !important;
-                    top: 1.05*$pageStart;
+                    border-bottom: 1px solid white;
+                    top: 0;
                     left: 0;
-                    width: 98vw;
+                    width: 100vw;
+                    height: (3*$leading)+$pageStart;
+                    overflow: visible;
+                    background-color: $orange;
 
                     a {
                         display: inline-block;
                         margin: 0 0.6*$leading;
 
                         svg {
+                            margin-top: 1.05*$pageStart;
                             fill: white;
                         }
                     }
