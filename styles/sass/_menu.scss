@@ -2,7 +2,6 @@
 body.menu,
 body.willCondense.menu,
 body.menu.willCondense {
-    overflow-y: hidden !important;
     background-color: $orange;
     transition: all 0s;
     height: 100vh !important;
@@ -30,7 +29,7 @@ body.menu.willCondense {
 
 
     .page {
-        top: $pageStart;
+        top: 0;
         position: relative;
         width: 100%;
         margin: 0 auto;
@@ -60,30 +59,32 @@ body.menu.willCondense {
         background-color: transparent !important;
         border: none;
         width: 100vw;
-        height: auto;
+        height: 100vh;
         position: fixed;
         left: 0;
         top: 0;
         overflow: hidden;
         text-align: center;
         z-index: 0;
-        padding: $pageStart+(3*$leading) 0 0 0;
-        margin: 0 auto;
+        padding: $pageStart+(3*$leading) 0 0;
+        
 
 
         ul {
             display: block;
             margin: 0 auto;
             width: 100%;
-            height: inherit;
-            top: 0;
+            top: $pageStart+(3*$leading);
+            padding-bottom: $pageStart+(3*$leading);
+            height: 100vh;
             margin: 0 auto;
-            padding: $leading;
+            padding-left: $leading;
+            padding-right: $leading;
             background-color: transparent !important;
             background-image: none !important;
-            //position: relative;
+            position: fixed;
             border-top: 1px solid white;
-            overflow-y: auto;
+            overflow-y: scroll !important;
             overflow-x: hidden;
 
             a:hover {
@@ -105,10 +106,10 @@ body.menu.willCondense {
             }
 
             #contactGroup {
-                position: inherit !important;
+                position: static !important;
 
                 #icons {
-                    position: absolute !important;
+                    position: fixed !important;
                     top: 1.05*$pageStart;
                     left: 0;
                     width: 98vw;
@@ -146,6 +147,7 @@ body.menu.willCondense {
                 background-color: transparent;
                 background-image: none !important;
                 padding: 0;
+                position: relative;
 
                 li {
                     margin: 0 auto !important;
