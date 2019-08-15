@@ -3,7 +3,7 @@
 
 
 body {
-    header {}
+    
 
     #hero {
         min-height: 15*$leading;
@@ -14,7 +14,7 @@ body {
 
         #contactGroup {
             position: absolute;
-            right: $leading;
+            left: 25%;
             top: $pageStart;
             z-index: 1;
             display: inline;
@@ -43,7 +43,7 @@ body {
                         fill: $orange;
                         width: $iconSize;
                         height: $iconSize;
-                        viewbox: 0 0 $iconSize $iconSize;
+                        
                     }
                 }
             }

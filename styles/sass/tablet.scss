@@ -3,6 +3,7 @@
 
 
 body {
+    
 
     #hero {
         min-height: 15*$leading;
@@ -41,7 +42,6 @@ body {
                         fill: $orange;
                         width: $iconSize;
                         height: $iconSize;
-                        viewbox: 0 0 $iconSize $iconSize;
                     }
                 }
             }
