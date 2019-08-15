@@ -18,7 +18,10 @@ html {
     body.preload {
         background-color: $orange;
 
-        * {
+        header,
+        nav,
+        main,
+        footer {
             -webkit-transition: none !important;
             -moz-transition: none !important;
             -ms-transition: none !important;
