@@ -66,26 +66,23 @@ body.menu.willCondense {
         overflow: hidden;
         text-align: center;
         z-index: 0;
-        padding: $pageStart+(3*$leading) 0 0;
-        
-
-
+        padding: 0;
         ul {
             display: block;
             margin: 0 auto;
-            width: 100%;
-            top: $pageStart+(3*$leading);
-            padding-bottom: $pageStart+(3*$leading);
+            width: 100vw;
+            max-width: 100vw;
+            top: 0;
             height: 100vh;
-            margin: 0 auto;
-            padding-left: $leading;
-            padding-right: $leading;
+            left: 0;
+            margin: (3*$leading)+$pageStart auto;
             background-color: transparent !important;
             background-image: none !important;
-            position: fixed;
+            position: absolute;
             border-top: 1px solid white;
             overflow-y: scroll !important;
             overflow-x: hidden;
+            
 
             a:hover {
                 background-color: $yellow !important;
@@ -107,7 +104,9 @@ body.menu.willCondense {
 
             #contactGroup {
                 position: static !important;
-
+                .contact {
+                    margin-bottom: (5*$leading)+$pageStart;
+                }
                 #icons {
                     position: fixed !important;
                     top: 1.05*$pageStart;
@@ -155,6 +154,7 @@ body.menu.willCondense {
                     display: table-cell !important;
                     font-size: $fontSize !important;
                     line-height: 1.5*$leading !important;
+                    
                 }
             }
         }
