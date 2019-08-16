@@ -1,0 +1,76 @@
+--------------------------------------------------------
+SCSS code
+--------------------------------------------------------
+
+#stack {
+            $staggerX: 50%;
+            $staggerY: 15%;
+            display: block;
+            position: relative;
+
+            #dimensions {
+                display: block;
+                position: relative;
+
+                div {
+                    position: absolute;
+                    width: 100%;
+                    height: 100%;
+                }
+
+                .one {
+                    left: 0;
+                    bottom: 0;
+                    filter: blur(0px);
+                }
+
+                .two {
+                    left: $staggerX;
+                    bottom: $staggerY;
+                    filter: blur(1px);
+                }
+
+                .three {
+                    left: 2*$staggerX;
+                    bottom: 2*$staggerY;
+                    filter: blur(2px);
+                }
+
+                .four {
+                    left: 3*$staggerX;
+                    bottom: 3*$staggerY;
+                    filter: blur(3px);
+                }
+
+                .five {
+                    left: 4*$staggerX;
+                    bottom: 4*$staggerY;
+                    filter: blur(4px);
+                }
+
+                .six {
+                    left: 5*$staggerX;
+                    bottom: 5*$staggerY;
+                    filter: blur(5px);
+                }
+            }
+        }
+        
+        
+-------------------------------------------------------        
+HTML code
+-------------------------------------------------------
+
+<div id="stack">
+                <div id="dimensions" style="
+                                            width: 20em;
+                                            height: 20em;
+                                            ">
+                    <div class="six" style="background-image: url(images/Illustrations/feather%20edge.svg)"></div>
+                    <div class="five" style="background-image: url(/images/Illustrations/palisade.svg)"></div>
+                    <div class="four" style="background-image: url(/images/Illustrations/chain%20link.svg)"></div>
+                    <div class="three" style="background-image: url(/images/Illustrations/picket.svg)"></div>
+                    <div class="two" style="background-image: url(/images/Illustrations/wire%20stock.svg)"></div>
+                    <div class="one" style="background-image: url(/images/Illustrations/post%20rail.svg)"></div>
+                </div>
+            </div>
