@@ -137,7 +137,7 @@
 #sprite {
   width: 4rem;
   position: absolute;
-  background: url(/aardvarkLandscapes/images/logo/LogoSpriteC50L36R23.gif);
+  background: url(/images/logo/LogoSpriteC50L36R23.gif);
   -webkit-animation: aardvarkIn 1.5s steps(36);
   animation: aardvarkIn 1.5s steps(39);
   background-size: cover;
@@ -301,9 +301,9 @@ body.condense #logo #bizName {
 
 .theme2 {
   background-color: #4D2C2C;
-  background-image: url(/aardvarkLandscapes/images/textures/img-noise-150x150.png), -webkit-linear-gradient(68.5deg, #4D2C2C -50%, #D3E3D6 600%);
-  background-image: url(/aardvarkLandscapes/images/textures/img-noise-150x150.png), -o-linear-gradient(68.5deg, #4D2C2C -50%, #D3E3D6 600%);
-  background-image: url(/aardvarkLandscapes/images/textures/img-noise-150x150.png), linear-gradient(21.5deg, #4D2C2C -50%, #D3E3D6 600%);
+  background-image: url(/images/textures/img-noise-150x150.png), -webkit-linear-gradient(68.5deg, #4D2C2C -50%, #D3E3D6 600%);
+  background-image: url(/images/textures/img-noise-150x150.png), -o-linear-gradient(68.5deg, #4D2C2C -50%, #D3E3D6 600%);
+  background-image: url(/images/textures/img-noise-150x150.png), linear-gradient(21.5deg, #4D2C2C -50%, #D3E3D6 600%);
   background-size: 200px 200px, cover;
   position: static;
   width: 100%;
@@ -372,7 +372,7 @@ html {
     padding: 0;
     overflow-x: hidden; }
     html body #noise {
-      background-image: url(/aardvarkLandscapes/images/textures/img-noise-150x150.png);
+      background-image: url(/images/textures/img-noise-150x150.png);
       background-size: 80px;
       opacity: 0.4;
       pointer-events: none;
