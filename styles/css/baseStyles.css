@@ -127,12 +127,10 @@
   transition: condenseLogoBack; }
 
 #logoBack:hover {
-
   cursor: pointer;
   -webkit-transform: scale(1.1) skewX(-21.5deg);
   -ms-transform: scale(1.1) skewX(-21.5deg);
   transform: scale(1.1) skewX(-21.5deg); }
-
 
 #logoBack,
 #sprite,
@@ -533,6 +531,10 @@ html {
             -webkit-transform: skewX(21.5deg);
             -ms-transform: skewX(21.5deg);
             transform: skewX(21.5deg); }
+        html body nav ul .product {
+          background-image: -webkit-linear-gradient(68.5deg, #4D2C2C -150%, #D3E3D6 300%);
+          background-image: -o-linear-gradient(68.5deg, #4D2C2C -150%, #D3E3D6 300%);
+          background-image: linear-gradient(21.5deg, #4D2C2C -150%, #D3E3D6 300%); }
         html body nav ul #contactGroup #navLink,
         html body nav ul #contactGroup #icons {
           -webkit-transition: all 0.4s 0.3s, background-color 0s;

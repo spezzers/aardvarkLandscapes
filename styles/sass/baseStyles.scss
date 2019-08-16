@@ -213,6 +213,9 @@ html {
                         transform: skewX(21.5deg);
                     }
                 }
+                .product {
+                    background-image: linear-gradient(21.5deg, $brown -150%, $light-green 300%);
+                }
 
                 #contactGroup {
 
