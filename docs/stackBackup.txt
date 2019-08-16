@@ -67,10 +67,10 @@ HTML code
                                             height: 20em;
                                             ">
                     <div class="six" style="background-image: url(images/Illustrations/feather%20edge.svg)"></div>
-                    <div class="five" style="background-image: url(/images/Illustrations/palisade.svg)"></div>
-                    <div class="four" style="background-image: url(/images/Illustrations/chain%20link.svg)"></div>
-                    <div class="three" style="background-image: url(/images/Illustrations/picket.svg)"></div>
-                    <div class="two" style="background-image: url(/images/Illustrations/wire%20stock.svg)"></div>
-                    <div class="one" style="background-image: url(/images/Illustrations/post%20rail.svg)"></div>
+                    <div class="five" style="background-image: url(/aardvarkLandscapes/images/Illustrations/palisade.svg)"></div>
+                    <div class="four" style="background-image: url(/aardvarkLandscapes/images/Illustrations/chain%20link.svg)"></div>
+                    <div class="three" style="background-image: url(/aardvarkLandscapes/images/Illustrations/picket.svg)"></div>
+                    <div class="two" style="background-image: url(/aardvarkLandscapes/images/Illustrations/wire%20stock.svg)"></div>
+                    <div class="one" style="background-image: url(/aardvarkLandscapes/images/Illustrations/post%20rail.svg)"></div>
                 </div>
             </div>

@@ -4,7 +4,7 @@
 .theme1 {
     background-color: white; //Fallback option
     background-image:
-        /*url(/images/textures/img-noise-150x150.png),*/
+        /*url(/aardvarkLandscapes/images/textures/img-noise-150x150.png),*/
         linear-gradient(21.5deg, $light-grey -100%, white 140%);
     background-size: cover;
     position: static;
@@ -63,7 +63,7 @@
 
 .theme2 {
     background-color: $brown; //Fallback option
-    background-image: url(/images/textures/img-noise-150x150.png), linear-gradient(21.5deg, $brown -50%, $light-green 600%);
+    background-image: url(/aardvarkLandscapes/images/textures/img-noise-150x150.png), linear-gradient(21.5deg, $brown -50%, $light-green 600%);
     background-size: 200px 200px, cover;
     position: static;
     width: 100%;
