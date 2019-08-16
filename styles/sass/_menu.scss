@@ -1,3 +1,4 @@
+@import 'variables';
 
 body.menu,
 body.willCondense.menu,
@@ -6,9 +7,9 @@ body.menu.willCondense {
     transition: all 0s;
     height: 100vh !important;
     position: relative !important;
-    
+
     margin: 0 !important;
-    
+
     #noise {
         position: fixed;
         top: 0;
@@ -37,10 +38,11 @@ body.menu.willCondense {
 
         #logo {
             margin-left: 0.6rem;
+
             #logoBack {
                 opacity: 0;
             }
-    
+
             #bizName {
                 color: white;
                 z-index: 2;
@@ -67,7 +69,7 @@ body.menu.willCondense {
         overflow-y: auto;
         text-align: center;
         padding: 0;
-        
+
         ul {
             display: block;
             margin: 0 auto;
@@ -81,8 +83,9 @@ body.menu.willCondense {
             background-image: none !important;
             position: absolute;
             padding-top: (4*$leading)+$pageStart;
+
             a:hover {
-                background-color: $yellow !important;
+                background-color: transparent !important;
             }
 
             a.currentPage {
@@ -95,6 +98,7 @@ body.menu.willCondense {
 
                 }
             }
+
             a.currentPage:hover {
                 background-color: transparent !important;
             }
@@ -102,6 +106,12 @@ body.menu.willCondense {
             #contactGroup {
                 position: static !important;
                 overflow: visible;
+
+                a:hover {
+                    background-color: transparent !important;
+                    background-image: none !important;
+                }
+
                 #icons {
                     position: fixed !important;
                     border-bottom: 1px solid white;
@@ -110,22 +120,27 @@ body.menu.willCondense {
                     width: 100vw;
                     height: (3*$leading)+$pageStart;
                     overflow: visible;
-                    background-color: $orange;
+                    background-color: $orange !important;
+                    transition: none;
 
                     a {
                         display: inline-block;
-                        margin: 0 0.6*$leading;
+                        margin-left: 0.6*$leading;
+                        margin-right: 0.6*$leading;
+                        margin-top: 0.95*$pageStart;
+                        padding: 0.33 * $leading;
+                        border-radius: 50%;
+                        background-color: white !important;
 
                         svg {
-                            margin-top: 1.05*$pageStart;
-                            fill: white;
+
+                            fill: $orange;
                         }
                     }
+
                     a:hover {
-                        background-color: $yellow !important;
-                        svg {
-                            fill: white !important;
-                        }
+                        filter: drop-shadow($linkShadow);
+                        transform: scale(1.1);
                     }
 
                     // display: none;
@@ -154,7 +169,7 @@ body.menu.willCondense {
                     display: table-cell !important;
                     font-size: $fontSize !important;
                     line-height: 1.5*$leading !important;
-                    
+
                 }
             }
         }
