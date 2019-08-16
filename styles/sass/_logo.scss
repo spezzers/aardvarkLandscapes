@@ -19,6 +19,7 @@ transform 0.25s;
         transition: $condenseLogoBack;
     }
 
+    
     #bizName {
         display: table-cell;
         vertical-align: middle;
@@ -93,5 +94,8 @@ transform 0.25s;
         //opacity: 0.8;
         -webkit-transition: all 0.8s;
         transition: all 0.8s;
+    }
+    #logoback:hover {
+        background-color: $orange;
     }
 }
