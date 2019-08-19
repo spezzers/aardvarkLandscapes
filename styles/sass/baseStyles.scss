@@ -62,6 +62,104 @@ html {
 
         }
 
+        .contactCard {
+            width: 10.5*$leading;
+            height: 6.5*$leading;
+            padding: $leading;
+            display: inline-block;
+            margin: 0.5*$leading;
+            ;
+            border-radius: 0.75*$leading;
+            background-color: white;
+            box-shadow: -3px 3px 2px rgba(black, 0.04);
+            overflow: hidden;
+
+            svg {
+                fill: white;
+                background-color: $light-grey;
+                width: 1.5*$leading;
+                height: 1.5*$leading;
+                padding: 0.5*$leading 0.75*$leading 0.65*$leading 0.5*$leading;
+                position: relative;
+                top: -$leading;
+                left: -$leading;
+                border-bottom-right-radius: 1*$leading;
+                overflow: visible !important;
+            }
+
+            h3 {
+                position: relative;
+                top: -2.75*$leading;
+                right: 0;
+                text-align: right;
+                margin: 0 0 -2.5*$leading;
+            }
+        }
+
+        #call {
+
+            ul {
+                position: relative;
+                list-style: none;
+                margin: 0;
+                padding: 0;
+                top: 1.25*$leading;
+
+                li {
+                    text-align: center;
+                    margin-bottom: 0.5*$leading;
+                }
+            }
+        }
+
+        #emailUs {
+            a {
+                display: block;
+                align-content: center;
+                vertical-align: middle;
+                position: relative;
+                bottom: -30%;
+            }
+        }
+
+        #chatMessenger {
+            p {
+                height: 5*$leading;
+                display: table-cell;
+                position: relative;
+                vertical-align: middle;
+                text-align: center;
+                top: 0;
+                padding: 0;
+            }
+        }
+
+        #findonFB {
+            p {
+                img {
+                    padding: 0.5*$leading;
+                }
+                height: 6*$leading;
+                position: relative;
+                vertical-align: middle;
+                text-align: center;
+                top: 0.5*$leading;
+                padding: 0;
+            }
+        }
+        #postal {
+            h3 {
+                top: 0;
+            }
+            p {
+                font-size: 0.85*$fontSize;
+                padding: 2*$leading 1.8*$leading 0 0;
+                
+                vertical-align: middle;
+
+            }
+        }
+
         .page,
         .paddedWrap {
             max-width: $maxPageWidth;
@@ -100,6 +198,7 @@ html {
             font-size: 0.76*$fontSize;
             letter-spacing: 0.05ch;
             color: $grey;
+
             p {
                 margin: 0.3*$leading;
             }
@@ -213,6 +312,7 @@ html {
                         transform: skewX(21.5deg);
                     }
                 }
+
                 .product {
                     background-image: linear-gradient(21.5deg, $brown -150%, $light-green 300%);
                 }
@@ -222,8 +322,8 @@ html {
                     #navLink,
                     #icons {
                         transition: all 0.4s 0.3s, background-color 0s;
-                        
-                        
+
+
                     }
 
                     #icons {
@@ -293,7 +393,6 @@ html {
             overflow-x: hidden;
 
 
-
             section {
                 padding: 0;
 
@@ -306,7 +405,7 @@ html {
                     margin-bottom: $leading;
                     max-width: 24*$leading;
                     width: auto;
-                    
+
                 }
 
 
@@ -318,7 +417,7 @@ html {
                 }
 
                 a:hover {
-                    color: $orange;
+                    color: $yellow;
                 }
 
                 h1 {

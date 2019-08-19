@@ -277,7 +277,7 @@ body.condense #logo #bizName {
   color: black;
   z-index: -20; }
   .theme1 a {
-    color: #3E654F; }
+    color: #db700c; }
   .theme1 .note {
     border-left: 1px dashed #80888f;
     border-bottom: 1px dashed #80888f;
@@ -386,6 +386,73 @@ html {
       top: 0;
       left: 0;
       overflow: hidden; }
+    html body .contactCard {
+      width: 13.78125rem;
+      height: 8.53125rem;
+      padding: 1.3125rem;
+      display: inline-block;
+      margin: 0.65625rem;
+      border-radius: 0.98438rem;
+      background-color: white;
+      -webkit-box-shadow: -3px 3px 2px rgba(0, 0, 0, 0.04);
+      box-shadow: -3px 3px 2px rgba(0, 0, 0, 0.04);
+      overflow: hidden; }
+      html body .contactCard svg {
+        fill: white;
+        background-color: #E4E3E8;
+        width: 1.96875rem;
+        height: 1.96875rem;
+        padding: 0.65625rem 0.98438rem 0.85313rem 0.65625rem;
+        position: relative;
+        top: -1.3125rem;
+        left: -1.3125rem;
+        border-bottom-right-radius: 1.3125rem;
+        overflow: visible !important; }
+      html body .contactCard h3 {
+        position: relative;
+        top: -3.60938rem;
+        right: 0;
+        text-align: right;
+        margin: 0 0 -3.28125rem; }
+    html body #call ul {
+      position: relative;
+      list-style: none;
+      margin: 0;
+      padding: 0;
+      top: 1.64063rem; }
+      html body #call ul li {
+        text-align: center;
+        margin-bottom: 0.65625rem; }
+    html body #emailUs a {
+      display: block;
+      -ms-flex-line-pack: center;
+      align-content: center;
+      vertical-align: middle;
+      position: relative;
+      bottom: -30%; }
+    html body #chatMessenger p {
+      height: 6.5625rem;
+      display: table-cell;
+      position: relative;
+      vertical-align: middle;
+      text-align: center;
+      top: 0;
+      padding: 0; }
+    html body #findonFB p {
+      height: 7.875rem;
+      position: relative;
+      vertical-align: middle;
+      text-align: center;
+      top: 0.65625rem;
+      padding: 0; }
+      html body #findonFB p img {
+        padding: 0.65625rem; }
+    html body #postal h3 {
+      top: 0; }
+    html body #postal p {
+      font-size: 0.8925rem;
+      padding: 2.625rem 2.3625rem 0 0;
+      vertical-align: middle; }
     html body .page,
     html body .paddedWrap {
       max-width: 68.25rem;
@@ -598,7 +665,7 @@ html {
           text-decoration-line: none;
           text-align: left; }
         html body main section a:hover {
-          color: #DD7654; }
+          color: #FFD45C; }
         html body main section h1 {
           font-size: 2.15rem;
           line-height: 2.625rem;
