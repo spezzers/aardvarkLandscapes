@@ -78,3 +78,8 @@ body {
 
     }
 }
+body.condense {
+    nav:not(#hero) {
+        margin-top: -$pageStart - (5*$leading);
+    }
+}

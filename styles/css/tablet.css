@@ -45,3 +45,6 @@ body {
       margin: 0 5 !important; }
     body main ul.items img.illustration {
       width: 90%; }
+
+body.condense nav:not(#hero) {
+  margin-top: -12.46875rem; }

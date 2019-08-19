@@ -46,3 +46,8 @@ body {
 
     }
 }
+body.condense {
+    nav:not(#hero) {
+        margin-top: -$pageStart - (15*$leading);
+    }
+}

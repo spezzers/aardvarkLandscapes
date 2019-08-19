@@ -1,1 +1,23 @@
-body nav{padding-bottom:2.625rem}body nav #contactGroup{position:static;display:block;top:inherit;left:inherit}body #hero{min-height:13.125rem}body main{padding:1.3125rem 0 0 0}body main .page{padding:0 8!important}body main ul.items li{width:84%!important;margin:0 8!important}body main ul.items img.illustration{width:80%}
+body nav {
+  padding-bottom: 2.625rem; }
+  body nav #contactGroup {
+    position: static;
+    display: block;
+    top: inherit;
+    left: inherit; }
+
+body #hero {
+  min-height: 13.125rem; }
+
+body main {
+  padding: 1.3125rem 0 0 0; }
+  body main .page {
+    padding: 0 8 !important; }
+  body main ul.items li {
+    width: 84% !important;
+    margin: 0 8 !important; }
+  body main ul.items img.illustration {
+    width: 80%; }
+
+body.condense nav:not(#hero) {
+  margin-top: -25.59375rem; }
