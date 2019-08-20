@@ -1,6 +1,4 @@
-var i = 0;
-setInterval(function() {
-    console.log('iteration ' + i)
-    i++;
-}, 1000)
-// This really doesn't need to be here at all
+function email(extension, domain, user) {
+    document.write('<a hr'+ 'ef="' + 'ma' + 'il' + 'to:' + user + '@' + domain + '.' + extension + '">' + user + '@' + domain + '.' + extension + '</a>')
+}
+email("com", "gmail", "contact.aardvark");

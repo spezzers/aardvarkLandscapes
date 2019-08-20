@@ -1,6 +1,34 @@
-"use strict";
-/* eslint-env node, browser */
+// ------------------------------------------ Email ----------------------------
 
+class Email {
+    constructor(id, domExt, dom, user) {
+        this.address = user + '@' + dom + '.' + domExt;
+        this.link = 'mailto:' + this.address;
+        this.id = id;
+    }
+}
+
+var emailList = [
+    new Email('email1', 'com', 'gmail', 'contact.aardvark'),
+    new Email('email2', 'com', 'deffowanna', 'ben'),
+    new Email('email3', 'com', 'gmail', 'fakename')
+];
+//console.log(emailList[0].link);
+function addEmailLinks() {
+    for (var i = 0; i < emailList.length; i++) {
+        var q = document.querySelectorAll('#' + emailList[i].id);
+        for (var ii = 0; ii < q.length; ii++) {
+            if (q[ii].classList.contains('button')) {
+                q[ii].href = emailList[i].link;
+            } else {
+                q[ii].innerHTML = emailList[i].address;
+                q[ii].href = emailList[i].link;
+            }
+
+        }
+    }
+}
+addEmailLinks();
 
 // --------------------------------------------- Page Curtain ------------------
 
@@ -30,7 +58,7 @@ function addNavListener() {
             var clickedLink = this.href;
             this.rel = "preload";
             console.log(this.rel + " " + this.href);
-           
+
 
             // function to trigger the opening of the destination url
 
@@ -72,6 +100,7 @@ function loaded() {
 }
 // -------------------------------------------- Menu button -------------------
 var scrollMem;
+
 function menu() {
     if (document.body.classList.contains("menu")) {
         if (document.body.classList.contains("willCondense")) {
@@ -79,23 +108,24 @@ function menu() {
             document.body.classList.remove("willCondense");
             document.body.classList.add("condense");
             window.scrollTo(0, scrollMem);
-            
+
             scrollPozish();
         } else {
             document.body.classList.remove("menu");
-            
+
             scrollPozish();
         }
 
     } else {
         scrollMem = window.pageYOffset;
-        
+
         if (document.body.classList.contains("condense")) {
             document.body.classList.remove("condense");
             document.body.classList.add("willCondense");
             document.body.classList.add("menu");
+        } else {
+            document.body.classList.add("menu")
         }
-        else {document.body.classList.add("menu")}
     }
 }
 
@@ -124,6 +154,6 @@ addNavListener();
 curtainOpen();
 window.onscroll = function () {
     if (document.body.classList.contains("scrollRecall") == false) {
-    scrollPozish()
+        scrollPozish()
     }
 }
