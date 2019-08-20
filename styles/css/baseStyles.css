@@ -494,7 +494,7 @@ html {
         margin: -0.65625rem;
         padding: 0; }
       html body footer ul {
-        margin: 0 0 1.3125rem 0;
+        margin: 1.3125rem 0;
         padding: 0;
         list-style: none; }
       html body footer p {
