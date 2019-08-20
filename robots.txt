@@ -1,0 +1,4 @@
+User-agent: *
+Disallow: /styles/
+Disallow: /SpadeSpinner.html
+Disallow: /README.md
