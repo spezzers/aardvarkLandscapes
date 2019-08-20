@@ -488,8 +488,17 @@ html {
       font-size: 0.798rem;
       letter-spacing: 0.05ch;
       color: #80888f; }
+      html body footer img {
+        height: 7.875rem;
+        width: 7.875rem;
+        margin: -0.65625rem;
+        padding: 0; }
+      html body footer ul {
+        margin: 0 0 1.3125rem 0;
+        padding: 0;
+        list-style: none; }
       html body footer p {
-        margin: 0.39375rem; }
+        margin: 1.3125rem 0; }
       html body footer address {
         font-style: normal;
         display: inline-block;

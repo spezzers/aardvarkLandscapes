@@ -198,9 +198,20 @@ html {
             font-size: 0.76*$fontSize;
             letter-spacing: 0.05ch;
             color: $grey;
+            img {
+                height: 6*$leading;
+                width: 6*$leading;
+                margin: -0.5*$leading;
+                padding: 0;
+            }
 
+            ul {
+                margin: 0 0 $leading 0;
+                padding: 0;
+                list-style: none;
+            }
             p {
-                margin: 0.3*$leading;
+                margin: $leading 0;
             }
 
 
