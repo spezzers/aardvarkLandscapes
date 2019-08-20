@@ -11,30 +11,35 @@
     <script type="application/ld+json">
         {
             "@context": "http://schema.org",
-            "@type": "GeneralContractor",
-            "name": "Aardvark Landscapes",
-            "image": "https://aardvark-landscapes.uk/images/schema/schema_aardvark.png",
-            "sameAs": "https://www.facebook.com/aardvarklandscapes/",
-            "description": "A duo of landscapers experienced in both commercial and private landscape gardening and tree surgery. Weather you are after some routine garden maintenance, or more substantial landscaping, Aardvark offer a friendly, quality service.",
-            "address": {
-                "@type": "PostalAddress",
-                "streetAddress": "29 Waterloo Cresent",
-                "addressLocality": "Countesthorpe",
-                "addressRegion": "Leicestershire",
-                "postalCode": "LE8 5SU",
-                "addressCountry": "United Kingdom"
-            },
-            "telephone": "+4407800766691",
-            "priceRange": "££-£££",
-            "areaServed": {
-            	"type": "GeoCircle",
-                "geoMidpoint": {
-               		"type": "GeoCoordinates",
-                    "latitude": "52.559736",
-                    "longitude": "-1.090474"
+            "@type": "Service",
+            "serviceType": "Landscape gardening",
+            "provider": {
+                "@type": "GeneralContractor",
+                "name": "Aardvark Landscapes",
+                "image": "https://aardvark-landscapes.uk/images/schema/schema_aardvark.png",
+                "sameAs": "https://www.facebook.com/aardvarklandscapes/",
+                "description": "A duo of landscapers experienced in both commercial and private landscape gardening and tree surgery. Weather you are after some routine garden maintenance, or more substantial landscaping, Aardvark offer a friendly, quality service.",
+                "address": {
+                    "@type": "PostalAddress",
+                    "streetAddress": "29 Waterloo Cresent",
+                    "addressLocality": "Countesthorpe",
+                    "addressRegion": "Leicestershire",
+                    "postalCode": "LE8 5SU",
+                    "addressCountry": "United Kingdom"
+
+                },
+                "telephone": "+4407800766691",
+                "priceRange": "££-£££",
+                "areaServed": {
+                    "type": "GeoCircle",
+                    "geoMidpoint": {
+                        "type": "GeoCoordinates",
+                        "latitude": "52.559736",
+                        "longitude": "-1.090474"
                     },
-                "geoRadius": "23250"
+                    "geoRadius": "23250"
                 }
+            }
         }
     </script>
     <style>
