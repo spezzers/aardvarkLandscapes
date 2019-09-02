@@ -3,7 +3,7 @@
 
 
 body {
-    
+
 
     #hero {
         min-height: 15*$leading;
@@ -43,7 +43,7 @@ body {
                         fill: $orange;
                         width: $iconSize;
                         height: $iconSize;
-                        
+
                     }
                 }
             }
@@ -59,6 +59,25 @@ body {
 
     main {
         padding: 0;
+
+        .leftAll {
+            position: relative;
+            display: inline-block;
+            width: 100%;
+
+            img {
+                width: 30%;
+                display: inline-block;
+
+            }
+
+            .text {
+                width: 59%;
+                padding-right: 5%;
+                display: inline-block;
+                margin-left: -1.5*$leading;
+            }
+        }
 
         .page {
             padding-left: $threeSpace !important;

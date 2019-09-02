@@ -37,6 +37,18 @@ body {
         font-weight: bold; }
   body main {
     padding: 0; }
+    body main .leftAll {
+      text-align: center;
+      position: relative;
+      display: inline-block;
+      width: 100%; }
+      body main .leftAll img {
+        width: 66%;
+        margin: 0 auto; }
+      body main .leftAll .text {
+        text-align: left;
+        width: 90%;
+        padding: 0 5%; }
     body main .page {
       padding-left: 5;
       padding-right: 5; }

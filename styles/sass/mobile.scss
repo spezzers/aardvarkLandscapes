@@ -2,19 +2,21 @@
 
 
 body {
-    
+
     nav {
         padding-bottom: 2*$leading;
-       // margin-bottom: $leading;
+
+        // margin-bottom: $leading;
         #contactGroup {
             position: static;
             display: block;
             top: inherit;
             left: inherit;
-            
-            
+
+
         }
     }
+
     #hero {
         min-height: 10*$leading;
         //padding-bottom: 2*$leading;
@@ -22,13 +24,36 @@ body {
 
     main {
         padding: $leading 0 0 0;
+        padding: 0;
+
+        .leftAll {
+            text-align: center;
+            width: 100vw;
+            position: relative;
+            width: 100vw;
+            left: -1.5*$leading;
+
+            img {
+                width: 90%;
+                margin: 0 auto -1*$leading;
+
+
+            }
+
+            .text {
+                text-align: left;
+                width: 90%;
+                padding-right: 0.5*$leading;
+                margin: 0;
+            }
+        }
 
         .page {
             padding: 0 $oneSpace !important;
 
         }
 
-        
+
 
         ul.items {
             li {
@@ -46,6 +71,7 @@ body {
 
     }
 }
+
 body.condense {
     nav:not(#hero) {
         margin-top: -$pageStart - (15*$leading);

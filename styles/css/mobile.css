@@ -10,7 +10,22 @@ body #hero {
   min-height: 13.125rem; }
 
 body main {
-  padding: 1.3125rem 0 0 0; }
+  padding: 1.3125rem 0 0 0;
+  padding: 0; }
+  body main .leftAll {
+    text-align: center;
+    width: 100vw;
+    position: relative;
+    width: 100vw;
+    left: -1.96875rem; }
+    body main .leftAll img {
+      width: 90%;
+      margin: 0 auto -1.3125rem; }
+    body main .leftAll .text {
+      text-align: left;
+      width: 90%;
+      padding-right: 0.65625rem;
+      margin: 0; }
   body main .page {
     padding: 0 8 !important; }
   body main ul.items li {

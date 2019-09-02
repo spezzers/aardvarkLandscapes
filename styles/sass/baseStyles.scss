@@ -9,7 +9,7 @@ html {
     padding: 0;
     letter-spacing: 0.02;
     word-spacing: 1.1;
-    overflow-x: hidden;
+    overflow-x: hidden !important;
 
 
     a {
@@ -139,6 +139,7 @@ html {
                 img {
                     padding: 0.5*$leading;
                 }
+
                 height: 6*$leading;
                 position: relative;
                 vertical-align: middle;
@@ -147,14 +148,16 @@ html {
                 padding: 0;
             }
         }
+
         #postal {
             h3 {
                 top: 0;
             }
+
             p {
                 font-size: 0.85*$fontSize;
                 padding: 2*$leading 1.8*$leading 0 0;
-                
+
                 vertical-align: middle;
 
             }
@@ -198,6 +201,7 @@ html {
             font-size: 0.76*$fontSize;
             letter-spacing: 0.05ch;
             color: $grey;
+
             img {
                 height: 6*$leading;
                 width: 6*$leading;
@@ -210,6 +214,7 @@ html {
                 padding: 0;
                 list-style: none;
             }
+
             p {
                 margin: $leading 0;
             }
@@ -403,10 +408,27 @@ html {
             text-align: left;
             overflow-x: hidden;
 
+            .leftAll {
+                background-color: white;
+                border-radius: $leading;
+                padding-bottom: 1*$leading;
+                margin-bottom: $leading;
+
+
+                img {
+                    display: inline-block;
+                    vertical-align: middle;
+
+                }
+
+                .text {
+                    display: inline-block;
+                    vertical-align: middle;
+                }
+            }
 
             section {
                 padding: 0;
-
 
 
 

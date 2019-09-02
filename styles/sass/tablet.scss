@@ -8,6 +8,7 @@ body {
     #hero {
         min-height: 15*$leading;
     }
+
     nav {
         margin: 2*$leading 0;
 
@@ -58,6 +59,26 @@ body {
     main {
         padding: 0;
 
+        .leftAll {
+            text-align: center;
+            position: relative;
+            display: inline-block;
+            width: 100%;
+
+            img {
+                width: 66%;
+                margin: 0 auto;
+
+
+            }
+
+            .text {
+                text-align: left;
+                width: 90%;
+                padding: 0 5%;
+            }
+        }
+
         .page {
             padding-left: $twoSpace;
             padding-right: $twoSpace;
@@ -78,6 +99,7 @@ body {
 
     }
 }
+
 body.condense {
     nav:not(#hero) {
         margin-top: -$pageStart - (5*$leading);

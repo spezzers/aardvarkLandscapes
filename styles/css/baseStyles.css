@@ -345,7 +345,7 @@ html {
   padding: 0;
   letter-spacing: 0.02;
   word-spacing: 1.1;
-  overflow-x: hidden; }
+  overflow-x: hidden !important; }
   html a {
     color: inherit;
     -webkit-text-decoration-line: none;
@@ -660,6 +660,17 @@ html {
       margin: 0 auto;
       text-align: left;
       overflow-x: hidden; }
+      html body main .leftAll {
+        background-color: white;
+        border-radius: 1.3125rem;
+        padding-bottom: 1.3125rem;
+        margin-bottom: 1.3125rem; }
+        html body main .leftAll img {
+          display: inline-block;
+          vertical-align: middle; }
+        html body main .leftAll .text {
+          display: inline-block;
+          vertical-align: middle; }
       html body main section {
         padding: 0; }
         html body main section p,
