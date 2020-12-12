@@ -1,6 +1,5 @@
 // ------------------------------ Home Page --------------------------------
-<
-script type = "application/ld+json" > {
+<script type = "application/ld+json" > {
     "@context": "http://schema.org",
     "@type": "HomeAndConstructionBusiness",
     "name": "Aardvark Landscapes",
