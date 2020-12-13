@@ -1,7 +1,6 @@
 module.exports = {
   plugins: [
     "gatsby-plugin-sitemap",
-    "gatsby-plugin-mdx",
     "gatsby-plugin-styled-components",
     "gatsby-plugin-react-helmet",
     {
@@ -11,6 +10,14 @@ module.exports = {
         path: "./src/pages/",
       },
       __key: "pages",
+    },
+    {
+      resolve: "gatsby-plugin-mdx",
+      options: {
+        defaultLayouts: {
+          default: require.resolve("./src/components/default-page-layout.mdx"),
+        },
+      },
     },
   ],
 };
