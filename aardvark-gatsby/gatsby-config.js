@@ -1,4 +1,7 @@
 module.exports = {
+  siteMetadata: {
+    title: "Aardvark Landscapes"
+  },
   plugins: [
     "gatsby-plugin-sitemap",
     "gatsby-plugin-styled-components",
