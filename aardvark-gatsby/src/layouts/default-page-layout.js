@@ -6,33 +6,37 @@ import Logo from '../components/Logo'
 const maxPageWidth = '800px'
 
 const Page = styled.div`
-display: flexbox;
-justify-content: center;
-flex-direction: column;
-max-width: 100vw;
-flex-wrap: wrap;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+	max-width: 100%;
+	flex-wrap: wrap;
+	box-sizing: border-box;
+	padding-top: 1rem;
 `
 const MainContent = styled.div`
-max-width: ${maxPageWidth};
-display: grid;
-grid-template-columns: repeat(auto-fill, minmax(200px, 1fr ));
+	max-width: ${maxPageWidth};
+	display: block;
+	width: 100%;
+	/* align-items: center; */
+	box-sizing: border-box;
 `
 const LogoContainer = styled.div`
-max-width: ${maxPageWidth};
-width: 100%;
-margin: 0 auto;
-align-self: center;
+	max-width: ${maxPageWidth};
+	width: 100%;
+	display: block;
+	margin: 0 auto;
+	align-self: center;
 `
 
 export default function Layout({ children }) {
 	return (
-		<Page>
-			<LogoContainer>
-				<Logo size='4' hideTagline={false} maxPageWidth={maxPageWidth} />
-			</LogoContainer>
-			<MainContent maxPageWidth={maxPageWidth}>
-				{children}
-			</MainContent>
-		</Page>
+			<Page>
+				<LogoContainer>
+					<Logo size='4' hideTagline={false} maxPageWidth={maxPageWidth} />
+				</LogoContainer>
+				<MainContent maxPageWidth={maxPageWidth}>{children}</MainContent>
+			</Page>
 	)
 }

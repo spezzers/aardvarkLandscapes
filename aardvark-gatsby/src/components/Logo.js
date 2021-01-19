@@ -1,4 +1,4 @@
-import React, {useState} from 'react'
+import React/* , {useState} */ from 'react'
 import styled from 'styled-components'
 import { colors } from '../globalStyles'
 import sprite from '../images/logo/logoSprite_L36R24.png'
@@ -82,7 +82,7 @@ const LogoMark = styled.div`
 	}
 `
 const Logo = props => {
-	const [tagline, setTagline] = useState('Landscape Gardening Services')
+	// const [tagline, setTagline] = useState('Landscape Gardening Services')
 	return (
 		<LogoAndTagline size={props.size}>
 			<LogoWrapper size={props.size}>
